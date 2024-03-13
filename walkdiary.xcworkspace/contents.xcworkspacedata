@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:walkdiary/Modules/CoreRecord+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:walkdiary/Modules/CoreRecord+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:walkdiary/Modules/CoreUser+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:walkdiary/Modules/CoreUser+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:BMKSwiftDemo-Bridging-Header.h">
+   </FileRef>
+   <FileRef
+      location = "group:walkdiary.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

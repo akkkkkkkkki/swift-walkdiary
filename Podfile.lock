@@ -1,0 +1,43 @@
+PODS:
+  - BaiduMapKit (6.5.8):
+    - BaiduMapKit/Base (= 6.5.8)
+    - BaiduMapKit/Map (= 6.5.8)
+    - BaiduMapKit/Search (= 6.5.8)
+    - BaiduMapKit/Utils (= 6.5.8)
+  - BaiduMapKit/Base (6.5.8)
+  - BaiduMapKit/Map (6.5.8):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Search (6.5.8):
+    - BaiduMapKit/Base
+  - BaiduMapKit/Utils (6.5.8):
+    - BaiduMapKit/Base
+  - BMKLocationKit (2.1.0)
+  - LZTag (1.0.8):
+    - LZTag/Expand (= 1.0.8)
+  - LZTag/Core (1.0.8)
+  - LZTag/Expand (1.0.8):
+    - LZTag/Core
+    - SnapKit (~> 5.6.0)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - BaiduMapKit (= 6.5.8)
+  - BMKLocationKit (= 2.1.0)
+  - LZTag
+
+SPEC REPOS:
+  trunk:
+    - BaiduMapKit
+    - BMKLocationKit
+    - LZTag
+    - SnapKit
+
+SPEC CHECKSUMS:
+  BaiduMapKit: 54aa08075ec9440b11e5d3d95c5807409a1c05cd
+  BMKLocationKit: a93bc412af3a601f12d243f4fb83f77650103e56
+  LZTag: dafe0cc8509187837fcd78fe4ad5064760d2b925
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 33f00c7213f0b91ff89bb688247dd40b79c9660c
+
+COCOAPODS: 1.13.0
