@@ -24,7 +24,7 @@ class LineChartView: UIView {
         let minYValue = dataPointsLow.min()!
         let path = UIBezierPath()
         
-        UIColor.black.set() // 设置线条颜色为蓝色
+        UIColor.black.set()
         
         for (index, point) in dataPoints.enumerated() {
             let xPosition = rect.width / CGFloat(dataPoints.count) * CGFloat(index + 1)
@@ -39,7 +39,7 @@ class LineChartView: UIView {
         path.stroke()
         
         let pathLow = UIBezierPath()
-        UIColor.black.set() // 设置线条颜色为红色
+        UIColor.black.set()
         
         for (index, point) in dataPointsLow.enumerated() {
             let xPositionLow = rect.width / CGFloat(dataPointsLow.count) * CGFloat(index + 1)

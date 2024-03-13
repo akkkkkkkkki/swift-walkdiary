@@ -39,10 +39,6 @@ IDE: Xcode
 │      LaunchScreen.storyboard 		# APP的splash screen
 │      Main.storyboard 				# 未使用
 │
-├─Function							# 未使用
-│      LocationManager.swift
-│      POISearch.swift
-│
 ├─Modules							# 包含未持久化和持久化所使用的数据模型
 │      CoreRecord+CoreDataClass.swift
 │      CoreRecord+CoreDataProperties.swift
@@ -56,20 +52,14 @@ IDE: Xcode
 │      UserManager.swift
 │
 ├─ViewControllers					# 各个子界面
-│  │  BaiduNavViewController.swift	# 未使用
 │  │  BMKMyAnnotationView.swift		# 自定义annotation view，便于管理
 │  │  CenterViewController.swift	# 个人中心
 │  │  LineCharView.swift			# 气温折线图
-│  │  LogRegViewController.swift	# 未使用
 │  │  Paw.swift						# record点
 │  │  POI.swift						# poi点
 │  │  POISearchViewController.swift	# 搜索界面
 │  │  PopupViewController.swift		# 编辑record界面
 │  │  RecordViewController.swift	# 显示record界面
-│  │
-│  └─LogRegViewController.xcdatamodeld
-│      └─LogRegViewController.xcdatamodel
-│              contents				# 未使用
 │
 └─walkdiary.xcdatamodeld			# coredata数据文件
     └─Model.xcdatamodel
@@ -352,29 +342,6 @@ func onGetWeatherResult(_ searcher: BMKWeatherSearch, result: BMKWeatherSearchRe
 ### 主要截图
 
 ![总截图1](D:\Documents\大三上\swift\walkdiary\总截图1.jpg)
-
-### 项目展望
-
-- 导航实现：目前周边搜索结果展示界面的导航按钮是空壳，尚未实现导航功能（存在包冲突未解决，工单询问尚未得到回复）
-- 图片支持：日记支持图片的上传和查询
-- 用户名登录+足迹报告：将数据保存在特定用户下，使用username登录，输入另一个user的id可以挖掘两个user之间的足迹信息并展示
-- 多线程：目前app在模拟器上跑较卡顿，不知是硬件问题还是代码问题，后期可以实现多线程
-
-项目不足在于布局严重机械化，大部分ui都是手动编写而未采用tableview等布局，可扩展性差；代码未精简，冗余度高。
-
-### 附录
-
-> 一些碎碎念
-
-一开始想到做一个地图，大概灵感有很早之前用过的一个APP里面可以看到小圈用户的实时位置，还有一些吵闹的小群喊话功能。搜索一些资料之后发现百度地图的sdk似乎还有点东西，于是就从官网给的文档开始一步步配环境到实现。
-
-在写代码的过程中，官方文档确实帮助了很多，一开始显示好地图之后特别开心；但是也发现了文档中的一些bug（这个太折磨人，例如百度给的annotation的默认图片是不存在的，当时搞了好久没办法把annotation显示在地图上），也提了几个工单来解决自己遇到的问题。另外就是上网找博客，尤其是环境配置那块（cocoapods还挺好用的），一些bundle identifier、pinfo什么的，收获还是蛮多。
-
-关于架构，开发到后期越来越觉得当初选storyboard不好，由于自己没有使用任何可视化编程，所以还不如一开始就用简洁一点的swiftUI，还能用更新的swiftdata。找博客的过程中也发现语言更新换代真的很快，感谢gpt帮我把objective-C或者老一点版本的swift代码转成swift让我cv（x。另外coredata一开始没有勾选导致还得后期配置，也掉了一些坑。
-
-关于界面，全部的icon都是在可画上下载的透明背景素材然后直接导入assets，给自己的发挥空间蛮大的（当然一开始就定了主色调和风格，整个开发下来自己还是比较满意的）
-
-最后很开心能够在一个多月的时间里把这个小小的APP完善到自己满意的版本（虽然展望还是一堆），但架构确实是依托（）
 
 **参考**
 
